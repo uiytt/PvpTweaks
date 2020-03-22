@@ -15,7 +15,7 @@ public class ConfigManager {
 	private Yaml config;
 	
 	public static final int SpigotID = 8900;
-	public static final String ConfigLink = "https://raw.githubusercontent.com/uiytt/CustomGoldenApple/master/config.yml";
+	public static final String ConfigLink = "https://raw.githubusercontent.com/uiytt/PvpTweaks/master/config.yml";
 	
 	private static boolean GoldenAppleModuleEnabled = true;
 	private static int FoodRegen = 0;
