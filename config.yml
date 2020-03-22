@@ -1,0 +1,76 @@
+#-----------------------------------------------------#
+#         PvpTweaks (for 1.12.2 and higher)   #
+#                     by uiytt                        #
+#              Inspirred by creator : XGardiac_           #
+#                   Version: 1.0                      #
+#-----------------------------------------------------#
+
+
+#Link for the golden apple plugin (1.7.x - 1.8.x) : https://www.spigotmc.org/resources/customgapple-%C2%BB-set-effects-to-enchanted-golden-apple-%C2%AB.24738/
+#
+# The max amplifier amount is 255
+#
+# For infinite duration set the duration to 99999 
+# Food effect : 
+# FOODREGEN:<value>
+# <value> is the number of food given, a normal food bar is 20
+# Valid potion effects :
+#
+# ABSORPTION.
+# BLINDNESS
+# CONFUSION
+# DAMAGE_RESISTANCE
+# etc....
+# the whole list : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+
+# How it works:
+# <EFFECT>:<DURATION>:<AMPLIFIER>
+# amplifier meaning how strong, duration meaning how long it'll last.
+# The first level of potion in minecraft is 0 !!!!
+#
+# > ALL TIMES ARE IN TICKS, 1 SECOND = 20 TICKS.
+# > SO IF YOU WANT TO DO 15 SECONDS: 15 x 20 = 300.
+
+#                                  - Example Configuration -
+#GoldenApplemodule: 
+# enabled: true
+# effect:
+#   - JUMP:9999999999999999999999:2
+#   - SPEED:600:3
+#   - INVISIBILITY:60:5
+#   - FOODREGEN:10
+#
+
+# below are defauls golden apple's effects as before 1.9, change as you will
+# be sure to follow tutorial above.
+
+GoldenApplemodule: 
+   enabled: true
+   effect: 
+   - FOODREGEN:4
+   - REGENERATION:600:0
+   - ABSORPTION:2400:0
+
+#/!\ a player full life is 20 (not 10), 1 = 1 half-heart
+#There is two way to calculate the damage done by the strength effect : 
+#normal: 
+# write the number in value (see below) 
+# The final damage is calculated with this : 
+# f(x) = x + (strength_level + 1) * value
+# with x the normal damage, strength_level : the level of strength (starting from 0) and value (see below).
+# After a few tests this seems to be a fair system for games.
+#
+#percentages:
+# write the number in value with a "%" AFTER and KEEP the quotes , like this ->  value: "10%"
+# The final damage is calculated with this : 
+# f(x) = x * ( 1 + ((strength_level + 1) * value / 100))
+# with x the normal damage, strength_level : the level of strength (starting from 0) and value (see below).
+#So the better your base damage is, the greate your final damage will be.
+
+Strengthmodule: 
+   value: '0.75'
+   enabled: true
+
+#Activate or desactivate checking sometimes for update.
+checkforupdate: true
+
