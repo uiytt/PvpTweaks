@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.uiytt</groupId>
   <artifactId>PvpTweaks</artifactId>
-  <version>0.2</version>
+  <version>1.0</version>
   <name>CustomGoldenApple</name>
   <description>Customize your golden apple </description>
     <repositories>
