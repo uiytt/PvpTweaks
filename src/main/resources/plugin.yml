@@ -1,0 +1,11 @@
+main: fr.uiytt.pvptweaks.Main
+name: PvpTweaks
+version: ${project.version}
+author: uiytt
+description: Customize your golden apple and your strength
+commands:
+ pvptweaks:
+  description: Reload the config of PvpTweaks
+  usage: /pvptweaks
+  permission: pvptweaks.reload
+  permission-message: You not have have permission to use this command.
